@@ -30,7 +30,7 @@ app.get('/users', (req, res, next) => {
     }
   })
 });
-
+app.disable("x-powered-by")
 app.listen(process.env.APP_PORT, () => {
   console.log(`Example app listening on port ${process.env.APP_PORT}`)
 })
